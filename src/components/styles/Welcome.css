@@ -1,0 +1,31 @@
+.WelcomeSection{
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.WelcomeSection__info{
+    text-align: center;
+    width: 30%;
+    margin-bottom:200px;
+}
+
+.WelcomeSection__info-title{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.WelcomeSection__info-rol{
+    font-size: 25px;
+}
+
+.WelcomeSection__info-bio{
+    margin-top: 10px;
+    font-size: 18px;
+}   
+
+.welcomeSection-img{
+    width: 300px;
+}
