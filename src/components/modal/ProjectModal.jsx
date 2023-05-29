@@ -28,7 +28,7 @@ export function ProjectModal({
         </button>
         <p className="ProjectModal__container-title">{name}</p>
         <img
-          src={`/public/projects/${img}`}
+          src={`/src/img/projects/${img}`}
           alt=""
           className="ProjectModal__container-img"
         />
