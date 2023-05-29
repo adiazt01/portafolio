@@ -14,7 +14,7 @@ function Welcome() {
         </p>
         <button className="WelcomeSection__info-button">Descargar cv</button>
       </div>
-      <img src="/public/simplePc.svg" alt="Pc" className="welcomeSection-img" />
+      <img src="simplePc.svg" alt="Pc" className="welcomeSection-img" />
     </section>
   );
 }
