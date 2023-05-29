@@ -1,0 +1,14 @@
+.ProjectSection{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-bottom: 100px;
+}
+
+.ProjectSection__Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
