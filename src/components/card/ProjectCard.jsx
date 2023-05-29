@@ -13,7 +13,7 @@ function ProjectCard({ name, info, img, git, link }) {
     <>
       <div className="ProjectCard">
         <img
-          src={`/public/projects/${img}`}
+          src={`../public/projects/${img}`}
           alt=""
           className="ProjectCard-img"
         />
