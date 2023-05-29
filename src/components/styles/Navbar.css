@@ -8,6 +8,7 @@
     padding: 0px 20px 0px;    
     align-items: center;
     animation: navbarBefore 1s none;
+    z-index: 5;
 }
 
 .navbar__logoContainer-title{

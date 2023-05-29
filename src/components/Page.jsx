@@ -1,3 +1,4 @@
+import Contact from './Container/Contact'
 import Projects from './Container/Projects'
 import Technology from './Container/Technology'
 import Welcome from './Container/Welcome'
@@ -12,6 +13,7 @@ function Page() {
         <Welcome/>
         <Technology/>
         <Projects/>
+        <Contact/>
     </div>
   )
 }

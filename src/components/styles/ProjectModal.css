@@ -9,6 +9,7 @@
   justify-content: center;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .ProjectModal__container {
@@ -18,10 +19,12 @@
   padding: 10px;
   width: 90%;
   max-width: 800px;
-  height: 70%;
+  height: 72%;
   background-color: white;
   border-radius: 20px;
   position: relative;
+  animation: on 1s;
+  transition: all 1s;
 }
 
 .ProjectModal__container-buttonQuit {
@@ -34,16 +37,71 @@
   cursor: pointer;
   margin-left: 43%;
   position: absolute;
+  color: brown;
+  transition: all .3s;
 }
 
-.ProjectModal__container-title{
-    font-size: xx-large;
-    margin-top: 20px;
+.ProjectModal__container-buttonQuit-icon:hover{
+  transform: scale(1.1);
 }
 
-.ProjectModal__container-img{
-    margin-top: 10px;
-    width: 70%;
-    max-width: 500px;
-    object-fit: contain;
+.ProjectModal__container-title {
+  font-size: xx-large;
+  margin-top: 20px;
+}
+
+.ProjectModal__container-img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 70%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.ProjectModal__container-info{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.ProjectModal__container__linksContainer{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ProjectModal__container__linksContainer-link{
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.ProjectModal__container__linksContainer-link:hover{
+  transform: translateY(-10px);
+  transform: rotate(360deg);
+  color: blue;
+}
+
+
+
+@keyframes on {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  20%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  30%{
+    transform: scale(0.9);
+  }
+  40%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(1);
+  }
 }

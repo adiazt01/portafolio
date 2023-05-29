@@ -3,26 +3,43 @@ import "../styles/ProjectModal.css";
 import { MdClose, MdLink } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
 
-function ProjectModal({ info, Modal, toggleModal }) {
-  const handleModal = () => {
-    toggleModal(!Modal);
+export function ProjectModal({
+  name,
+  info,
+  img,
+  git,
+  link,
+  modalBool,
+  handleModal,
+}) {
+  const modalToogle = () => {
+
+    handleModal(!modalBool);
   };
 
   return (
     <div className="ProjectModal">
       <div className="ProjectModal__container">
         <button
-          onClick={handleModal}
+          onClick={modalToogle}
           className="ProjectModal__container-buttonQuit"
         >
-          <MdClose className="ProjectModal__container-buttonQuit-icon"/>
+          <MdClose className="ProjectModal__container-buttonQuit-icon" />
         </button>
-        <p className="ProjectModal__container-title">{info.name}</p>
-        <img src={`/public/projects/${info.img}`} alt="" className="ProjectModal__container-img"/>
-        <p className="ProjectModal__container-info">{info.info}</p>
+        <p className="ProjectModal__container-title">{name}</p>
+        <img
+          src={`/public/projects/${img}`}
+          alt=""
+          className="ProjectModal__container-img"
+        />
+        <p className="ProjectModal__container-info">{info}</p>
         <div className="ProjectModal__container__linksContainer">
-          <a href=""><GoMarkGithub className="ProjectModal__container__linksContainer-link"/>{info.git}</a>
-          <a href=""><MdLink className="ProjectModal__container__linksContainer-link"/>{info.link}</a>
+          <a href={git}>
+            <GoMarkGithub className="ProjectModal__container__linksContainer-link" />
+          </a>
+          <a href={link}>
+            <MdLink className="ProjectModal__container__linksContainer-link" />
+          </a>
         </div>
       </div>
     </div>
@@ -30,9 +47,11 @@ function ProjectModal({ info, Modal, toggleModal }) {
 }
 
 ProjectModal.propTypes = {
-  info: PropTypes.object,
-  Modal: PropTypes.bool,
-  toggleModal: PropTypes.func,
+  name: PropTypes.string,
+  info: PropTypes.string,
+  img: PropTypes.string,
+  git: PropTypes.string,
+  link: PropTypes.string,
+  modalBool: PropTypes.bool,
+  handleModal: PropTypes.func,
 };
-
-export default ProjectModal;

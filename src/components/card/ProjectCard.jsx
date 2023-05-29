@@ -1,21 +1,13 @@
 import PropTypes from "prop-types";
 import "../styles/ProjectCard.css";
 import { MdSearch } from "react-icons/md";
-
-function ProjectCard({ name, img, Modal, toggleModal, ModalInfo }) {
-
-  const handleModal = () => {
-    toggleModal(!Modal)
-    handleModalInfo()
+import { useState } from "react";
+import { ProjectModal } from "../modal/ProjectModal.jsx";
+function ProjectCard({ name, info, img, git, link }) {
+  const [Modal, setModal] = useState(false);
+  function handleModal() {
+    setModal(!Modal);
   }
-
-  const handleModalInfo = () => {
-    ModalInfo({
-      name: name,
-      img: img
-    })
-  }
-
 
   return (
     <>
@@ -30,16 +22,27 @@ function ProjectCard({ name, img, Modal, toggleModal, ModalInfo }) {
           Mas info <MdSearch className="ProjectCard-button-icon" />
         </button>
       </div>
+      {Modal ? (
+        <ProjectModal
+          name={name}
+          info={info}
+          img={img}
+          git={git}
+          link={link}
+          modalBool={Modal}
+          handleModal={handleModal}
+        />
+      ) : null}
     </>
   );
 }
 
 ProjectCard.propTypes = {
   name: PropTypes.string,
+  info: PropTypes.string,
   img: PropTypes.string,
-  Modal: PropTypes.bool,
-  toggleModal: PropTypes.func,
-  ModalInfo: PropTypes.func
+  git: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default ProjectCard;
