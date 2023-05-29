@@ -4,7 +4,7 @@ import "../styles/TechCard.css";
 function TechCard({ nombre, icono }) {
   return (
     <div className="TechCard">
-      <img src={`/src/img/tech/${icono}`} alt="" className="TechCard-img" />
+      <img src={`img/tech/${icono}`} alt="" className="TechCard-img" />
       <p className="TechCard-title">{nombre}</p>
     </div>
   );
