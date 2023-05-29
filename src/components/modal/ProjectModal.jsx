@@ -19,9 +19,10 @@ function ProjectModal({ info, Modal, toggleModal }) {
         </button>
         <p className="ProjectModal__container-title">{info.name}</p>
         <img src={`/public/projects/${info.img}`} alt="" className="ProjectModal__container-img"/>
+        <p className="ProjectModal__container-info">{info.info}</p>
         <div className="ProjectModal__container__linksContainer">
-          <a href=""><GoMarkGithub className="ProjectModal__container__linksContainer-link"/></a>
-          <a href=""><MdLink className="ProjectModal__container__linksContainer-link"/></a>
+          <a href=""><GoMarkGithub className="ProjectModal__container__linksContainer-link"/>{info.git}</a>
+          <a href=""><MdLink className="ProjectModal__container__linksContainer-link"/>{info.link}</a>
         </div>
       </div>
     </div>

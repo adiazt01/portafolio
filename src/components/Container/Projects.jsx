@@ -6,7 +6,13 @@ import ProjectModal from "../modal/ProjectModal";
 
 function Projects() {
   const [Modal, setModal] = useState(false);
-  const [ModalInfo, setModalInfo] = useState({ name: "", img: "" });
+  const [ModalInfo, setModalInfo] = useState({
+    name: "",
+    img: "",
+    git: "",
+    link: "",
+    info: "",
+  });
 
   const HandleModalInfo = (info) => {
     setModalInfo(info);
@@ -63,7 +69,13 @@ function Projects() {
           ModalInfo={HandleModalInfo}
         />
       </div>
-      {Modal ? <ProjectModal info={ModalInfo} Modal={Modal} toggleModal={toggleModal}/> : null}
+      {Modal ? (
+        <ProjectModal
+          info={ModalInfo}
+          Modal={Modal}
+          toggleModal={toggleModal}
+        />
+      ) : null}
     </section>
   );
 }
