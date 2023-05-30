@@ -1,4 +1,4 @@
-import "./App.css";
+import "./style/App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Page from "./components/Page";
 

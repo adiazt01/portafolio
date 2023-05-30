@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ProjectModal } from "../modal/ProjectModal.jsx";
 function ProjectCard({ name, info, img, git, link }) {
   const [Modal, setModal] = useState(false);
+  
   function handleModal() {
     setModal(!Modal);
   }
@@ -22,7 +23,7 @@ function ProjectCard({ name, info, img, git, link }) {
           Mas info <MdSearch className="ProjectCard-button-icon" />
         </button>
       </div>
-      {Modal ? (
+      {Modal && (
         <ProjectModal
           name={name}
           info={info}
@@ -32,7 +33,7 @@ function ProjectCard({ name, info, img, git, link }) {
           modalBool={Modal}
           handleModal={handleModal}
         />
-      ) : null}
+      )}
     </>
   );
 }
