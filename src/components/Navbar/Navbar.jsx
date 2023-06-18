@@ -1,49 +1,39 @@
-import "../styles/Navbar.css";
-import {
-  MdAccountCircle,
-  MdOutlineComputer,
-  MdFolder,
-  MdContacts,
-} from "react-icons/md";
+import "/src/style/Navbar.scss"
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="navbar__logoContainer"><p className="navbar__logoContainer-title">Programador A.D</p></div>
-      <ul className="navbar__linksContainer">
+      <div className="logoContainer"><p className="title">Programador A.D</p></div>
+      <ul className="linksContainer">
         <li
-          className="navbar__linksContainer-item"
+          className="item"
           style={{ animationDuration: "1s" }}
         >
-          <a href="" className="navbar__linksContainer-link">
-            <MdAccountCircle className="navbar__linksContainer-icon" />
+          <a href="#Welcome" className="link">
             Sobre mi
           </a>
         </li>
         <li
-          className="navbar__linksContainer-item"
+          className="item"
           style={{ animationDuration: "1.1s" }}
         >
-          <a href="" className="navbar__linksContainer-link">
-            <MdOutlineComputer className="navbar__linksContainer-icon" />
+          <a href="#Tech" className="link">
             Tecnologias
           </a>
         </li>
         <li
-          className="navbar__linksContainer-item"
+          className="item"
           style={{ animationDuration: "1.2s" }}
         >
-          <a href="" className="navbar__linksContainer-link">
-            <MdFolder className="navbar__linksContainer-icon" />
+          <a href="#Projects" className="link">
             Proyectos
           </a>
         </li>
         <li
-          className="navbar__linksContainer-item"
+          className="item"
           style={{ animationDuration: "1.3s" }}
         >
-          <a href="" className="navbar__linksContainer-link">
-            <MdContacts className="navbar__linksContainer-icon" />
+          <a href="#Contacts" className="link">
             Contacto
           </a>
         </li>

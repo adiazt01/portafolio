@@ -1,0 +1,64 @@
+@import "./themes/DarkTheme.scss";
+
+.ProjectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+
+  .ProjectCard_img {
+    transition: 0.3s;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .ProjectCard_button {
+    position: absolute;
+    cursor: pointer;
+    background-color: $button-color;
+    color: $button-link-color;
+    width: 120px;
+    border: 0px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 1em;
+    top: 12em;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover{
+      transform: scale(1.1);
+    }
+
+    .ProjectCard_button_icon{
+        margin-bottom: -3px;
+        margin-left: 3px;
+    }
+  }
+
+  .ProjectCard_title {
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    top: -2em;
+    text-align: center;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &:hover {
+
+    .ProjectCard_img {
+      transform: scale(1.3);
+      filter: brightness(0.2);
+    }
+
+    .ProjectCard_button{
+        top: 7em;
+    }
+
+    .ProjectCard_title {
+      top: 1.6em;
+    }
+  }
+}

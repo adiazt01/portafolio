@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
-import "../styles/ProjectCard.css";
 import { MdSearch } from "react-icons/md";
+import "/src/style/ProjectCard.scss";
+
 function ProjectCard({ data, setModal, position }) {
   return (
     <>
@@ -8,14 +9,14 @@ function ProjectCard({ data, setModal, position }) {
         <img
           src={`img/projects/${data.img}`}
           alt=""
-          className="ProjectCard-img"
+          className="ProjectCard_img"
         />
-        <p className="ProjectCard-title">{data.name}</p>
+        <p className="ProjectCard_title">{data.name}</p>
         <button
-          className="ProjectCard-button"
+          className="ProjectCard_button"
           onClick={() => setModal(position)}
         >
-          Mas info <MdSearch className="ProjectCard-button-icon" />
+          Mas info <MdSearch className="ProjectCard_button_icon" />
         </button>
       </div>
     </>

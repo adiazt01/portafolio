@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Title from "../Title";
 import ProjectCard from "../card/ProjectCard";
-import "../styles/ProjectSection.css";
+import { ProjectModal } from "../modal/ProjectModal";
+import "/src/style/ProjectSection.scss";
 
 const projects = [
   {
@@ -31,36 +31,24 @@ function Projects() {
   const [modal, setModal] = useState(false);
 
   return (
-    <section className="ProjectSection">
-      <Title title={"Proyectos"} />
-      {/* Codigo modal html */}
-      {console.log(modal !== false ? projects[modal] : modal)}
-      {/*
-        EJEMPLO
-      {Modal && (
-        <ProjectModal
-          name={name}
-          info={info}
-          img={img}
-          git={git}
-          link={link}
-          modalBool={Modal}
-          handleModal={handleModal}
-          position={modal}
-        />
-      )}
-        */}
-      {/*<ProjectModal data={modal !== false ? projects[modal] : modal} setModal={setModal} />*/}
-      <div className="ProjectSection__Container">
-        <div className="ProjectSection__Container">
+    <section className="ProjectSection" id="Projects">
+      <h2>Proyectos</h2>
+
+      {modal !== false ? (
+        <ProjectModal data={projects[modal]} setModal={setModal} />
+      ) : null}
+
+      <div className="ProjectContainer">
           {projects.map((data, index) => {
             return (
-              <>
-                <ProjectCard data={data} setModal={setModal} position={index} />
-              </>
+              <ProjectCard
+                key={index}
+                data={data}
+                setModal={setModal}
+                position={index}
+              />
             );
           })}
-        </div>
       </div>
     </section>
   );

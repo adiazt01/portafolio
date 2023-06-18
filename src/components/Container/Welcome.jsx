@@ -1,20 +1,20 @@
-import "../styles/Welcome.css";
+import "/src/style/Welcome.scss";
 
 function Welcome() {
   return (
-    <section className="WelcomeSection">
-      <div className="WelcomeSection__info">
-        <p className="WelcomeSection__info-title">Ey, soy Armando Diaz</p>
-        <p className="WelcomeSection__info-rol">Un desarrollador Front-end</p>
-        <p className="WelcomeSection__info-bio">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quae
-          accusantium, placeat nostrum, sit doloremque perspiciatis ea odio
-          voluptatibus at, assumenda ad enim. Nemo sequi molestiae quos aliquam
-          ab ratione.
+    <section className="Welcome" id="Welcome">
+      <div className="Welcomeinfo">
+        <h3 className="title">Hola, me llamo Armando Diaz</h3>
+        <p className="rol">y soy desarrollador Front-end</p>
+        <p className="bio">
+          Con experencia en el desarrollo de aplicaciones y sitios web, Me
+          apasiona el diseño web y la optimización del rendimiento. Estoy
+          buscando oportunidades para seguir desenvolviendome en este campo para
+          seguir creciendo de profesionalmente. Muchas gracias por su atención.
         </p>
-        <button className="WelcomeSection__info-button">Descargar cv</button>
+        <button className="buttonCv">Descargar cv</button>
       </div>
-      <img src="simplePc.svg" alt="Pc" className="welcomeSection-img" />
+      <img src="/img/simplePc.png" alt="Pc" className="img" />
     </section>
   );
 }

@@ -8,3 +8,25 @@
   font-family: "Roboto", sans-serif;
   font-family: "Signika Negative", sans-serif;
 }
+
+:root{
+  scroll-behavior: smooth;
+  scroll-padding: 250px;
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  overflow: hidden;
+  justify-content: center;
+  margin: auto;
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 50px;
+}

@@ -1,12 +1,20 @@
-import "./style/App.css";
+import "./style/App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import Page from "./components/Page";
+import Welcome from "./components/Container/Welcome";
+import Projects from "./components/Container/Projects";
+import Contact from "./components/Container/Contact";
+import Technology from "./components/Container/Technology";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Page/>
+      <div className="Container">
+        <Welcome />
+        <Technology />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }

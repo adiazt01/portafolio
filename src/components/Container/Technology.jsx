@@ -1,12 +1,11 @@
 import TechCard from "../card/TechCard";
-import "../styles/Technology.css";
-import Title from "../Title";
+import "/src/style/Technology.scss";
 
 function Technology() {
   return (
-    <section className="TechSection">
-      <Title title={"Tecnologias"} />
-      <div className="TechSection__Container">
+    <section className="TechSection" id="Tech">
+      <h2>Tecnologias</h2>
+      <div className="container">
         <TechCard nombre={'HTML'} icono={'html.png'}/>
         <TechCard nombre={'CSS3'} icono={'css.png'}/>
         <TechCard nombre={'Javascript'} icono={'javascript.png'}/>

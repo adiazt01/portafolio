@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import "../styles/TechCard.css";
+import "/src/style/TechCard.scss";
 
 function TechCard({ nombre, icono }) {
   return (
     <div className="TechCard">
-      <img src={`img/tech/${icono}`} alt="" className="TechCard-img" />
-      <p className="TechCard-title">{nombre}</p>
+      <img src={`img/tech/${icono}`} alt="" className="img" />
+      <p className="title">{nombre}</p>
     </div>
   );
 }

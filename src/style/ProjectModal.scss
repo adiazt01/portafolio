@@ -1,0 +1,89 @@
+@import "./themes//DarkTheme.scss";
+
+.ProjectModal {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: unset;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 5;
+
+  .ProjectModal__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    height: 65%;
+    background-color: $background-color;
+    position: relative;
+    z-index: 6;
+    max-width: 600px;
+
+    .ProjectModal__container-buttonQuit {
+      font-size: 30px;
+      position: absolute;
+      top: 15px;
+      cursor: pointer;
+      right:20px;
+      width: 35px;
+      background-color: $button-color;
+      border-radius: 20px;
+      border: 0px;
+      height: 35px;
+      padding: 3px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+
+    .ProjectModal__container-title{
+        text-align: center;
+        width: 80%;
+        margin: 10px auto 0px;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #ffff;
+    }
+
+    .ProjectModal__container-img {
+      width: 100%;
+      max-width: 350px;
+      object-fit: contain;
+      margin: 50px auto 10px;
+    }
+
+    .ProjectModal__container-info{
+        color: $info-color;
+        text-align: center;
+        font-size: 1.1em;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .ProjectModal__container__linksContainer{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        font-size: 2.5em;
+
+        .ProjectModal__container__linksContainer-link{
+            color: 
+            $title-color;
+        }
+    }
+  }
+}
