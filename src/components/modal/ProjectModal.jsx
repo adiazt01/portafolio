@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { MdClose, MdLink } from "react-icons/md";
 import { GoMarkGithub } from "react-icons/go";
-import "/src/style/ProjectModal.scss"
+import "/src/style/ProjectModal.scss";
 
 export function ProjectModal({ data, setModal }) {
   const { name, info, img, git, link } = data;
@@ -28,10 +28,10 @@ export function ProjectModal({ data, setModal }) {
           <h4 className="ProjectModal__container-title">{name}</h4>
           <p className="ProjectModal__container-info">{info}</p>
           <div className="ProjectModal__container__linksContainer">
-            <a href={git}>
+            <a href={git} target="_blank" rel="noreferrer">
               <GoMarkGithub className="ProjectModal__container__linksContainer-link" />
             </a>
-            <a href={link}>
+            <a href={link} target="_blank" rel="noreferrer">
               <MdLink className="ProjectModal__container__linksContainer-link" />
             </a>
           </div>

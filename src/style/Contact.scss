@@ -1,0 +1,50 @@
+@import "./themes/DarkTheme.scss";
+
+.ContactSection {
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-color;
+
+  .ContactSection-title {
+    color: $link-color;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ContactSection-p {
+    text-align: center;
+    color: $info-color;
+  }
+
+  .ContactSection__containerLink {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto 50px;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 3.5em;
+
+    .ContactSection__containerLink-link {
+      color: white;
+      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ContactSection {
+    .ContactSection-title {
+      font-size: 2rem;
+    }
+
+    .ContactSection-p {
+      font-size: 1.3rem;
+    }
+  }
+}

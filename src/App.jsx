@@ -13,8 +13,8 @@ function App() {
         <Welcome />
         <Technology />
         <Projects />
-        <Contact />
       </div>
+      <Contact />
     </>
   );
 }

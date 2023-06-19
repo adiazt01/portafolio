@@ -1,18 +1,20 @@
 @import "./themes/DarkTheme.scss";
 
-.TechCard{
-    width: auto;
+.TechCard {
+  width: auto;
 
-    .img{
-        width: 100%;
-        max-width: 300px;
-    }
+  .img {
+    width: 100%;
+    max-width: 150px;
+  }
 
-    .title{
-        text-align: center;
-        color: $subtitle-color;
-        font-weight: 600;
-        margin-top: -13px;
-        font-size: 1.4rem;
-    }
+  .title {
+    text-align: center;
+    color: $subtitle-color;
+    font-weight: 600;
+    margin-top: -13px;
+    margin-left: -29px;
+    font-size: 1.4rem;
+  }
 }
+
