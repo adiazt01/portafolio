@@ -12,8 +12,8 @@ function App() {
         <Welcome />
         <Projects />
       </div>
-      <Contact />
-      <footer>
+      <Contact/>
+      <footer id="Contacts">
         <p>Copyright&copy; 2023 - Página creada por Armando Diaz - Todos los derechos reservados</p>
       </footer>
     </>

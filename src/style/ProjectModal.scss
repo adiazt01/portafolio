@@ -19,7 +19,7 @@
   .ProjectModal__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 90%;
     max-width: 1000px;
     height: 90%;
@@ -65,6 +65,7 @@
       flex-direction: column;
       width: 90%;
       margin: 0px auto;
+      justify-content: center;
       gap: 20px;
 
       .ProjectModal__container-title {
@@ -93,16 +94,20 @@
       .ProjectModal__container-info {
         color: $info-color;
         text-align: center;
-        font-size: clamp(5px, 6vw, 20px);
+        font-size: clamp(5px, 6vw, 16px);
       }
 
       .ProjectModal__container__linksContainer {
-        margin-bottom: 50px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 30px;
         width: 100%;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+
 
         .ProjectModal__container__linksContainer-button {
           font-weight: 600;
@@ -155,9 +160,9 @@
           margin-top: 3.5vh;
         }
         .ProjectModal__container__linksContainer{
-          position: absolute;
-          bottom: 0;
+          bottom: 40px;
           right: 40px;
+          left: auto;
           width: auto;
         }
       }
