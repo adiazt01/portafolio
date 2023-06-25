@@ -7,22 +7,17 @@ function Navbar() {
         <p className="title">Programador A.D</p>
       </div>
       <ul className="linksContainer">
-        <li className="item" style={{ animationDuration: "1s" }}>
+        <li className="item">
           <a href="#Welcome" className="link">
             Biografía
           </a>
         </li>
-        <li className="item" style={{ animationDuration: "1.1s" }}>
-          <a href="#Tech" className="link">
-            Tecnologias
-          </a>
-        </li>
-        <li className="item" style={{ animationDuration: "1.2s" }}>
+        <li className="item">
           <a href="#Projects" className="link">
             Proyectos
           </a>
         </li>
-        <li className="item" style={{ animationDuration: "1.3s" }}>
+        <li className="item">
           <a href="#Contacts" className="link">
             Contacto
           </a>

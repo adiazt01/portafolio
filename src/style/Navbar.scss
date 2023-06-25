@@ -12,12 +12,11 @@
   z-index: 5;
 
   .linksContainer {
-    margin: 1vh auto;
+    margin: 2vh auto;
     display: flex;
     width: 90%;
     justify-content: space-between;
     flex-direction: row;
-    font-size: 1rem;
     gap: 5px;
 
     .item {
@@ -27,18 +26,20 @@
       .link {
         text-decoration: none;
         color: $link-color;
-        transition: 1s;
+        transition: .4s;
+        font-size: clamp(20px, 12vw, 18px);
         &::before {
           content: "";
-          height: 3px;
+          height: 4px;
           width: 0px;
-          bottom: -5px;
-          background-color: white;
+          bottom: -10px;
+          background-color: $effect-color;
           position: absolute;
-          transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: 0.3s;
         }
-
+        
         &:hover {
+          color: $title-color;
           &::before {
             width: 100%;
           }
@@ -55,7 +56,7 @@
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
-
+    padding: 10px 20px;
     height: 45px;
     justify-content: space-between;
 
@@ -66,7 +67,6 @@
 
       .item {
         .link {
-          font-size: 1.3rem;
           color: $link-color;
         }
       }

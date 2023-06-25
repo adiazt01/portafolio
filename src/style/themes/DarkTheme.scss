@@ -1,15 +1,32 @@
-$primary-color: #3d6c93;
-$background-color: #032d4b;
+$primary-color: #002a41;
+$background-color: #002E47;
 
 $title-color: #61cedf;
 $subtitle-color: #499fad;
 $link-color: #ffffff;
 $info-color: #d0d0d0;
 
-$button-color: #5398d1;
-$button-link-color: black;
+/* Efectos */
+$effect-color:  #ff8800;
+$shadow: rgba(black, .2);
 
-$footer-color: #2d3436;
+/* Boton 1 */
+$buttonPrimary-color: #ff8800;
+$buttonPrimary-link-color: rgb(25, 25, 25);
+
+/* Boton 2 */
+$buttonSecondary-color: rgb(25, 25, 25);
+$buttonSecondary-link-color: #ff8800;
+
+/* Boton Project  Card */
+$button-border-color: #61cedf;
+$button-link-color: #61cedf;
+
+/* Tarjeta de contacto */
+$cardContact-color: #003E5C;
+$linkContact-color: #0073ad;
+
+$footer-color: $shadow;
 
 body{
   background-color: $background-color;

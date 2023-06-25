@@ -1,13 +1,36 @@
-.ProjectSection{
-    width: 80%;
-    margin: auto;
-    justify-content: center;
+@import "./themes/DarkTheme.scss";
 
-    .ProjectContainer{
-        display: grid;
-        gap: 20px;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        margin-bottom: 100px;
+.ProjectSection {
+  width: 95%;
+  margin: auto;
+  justify-content: center;
+
+  .ProjectSection-title {
+    font-size: 2em;
+  }
+
+  .ProjectContainer {
+    display: grid;
+    gap: 50px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 100px;
+    background-color: $shadow;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ProjectSection {
+    .ProjectSection-title {
+      font-size: 3em;
+      color: $title-color;
+      margin-bottom: 50px;
     }
+
+    .ProjectContainer {
+      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
 }

@@ -4,7 +4,7 @@ import { GoMarkGithub } from "react-icons/go";
 import "/src/style/ProjectModal.scss";
 
 export function ProjectModal({ data, setModal }) {
-  const { name, info, img, git, link } = data;
+  const { name, info, img, git, link, techs } = data;
 
   const modalToogle = () => {
     setModal(false);
@@ -25,15 +25,39 @@ export function ProjectModal({ data, setModal }) {
             alt=""
             className="ProjectModal__container-img"
           />
-          <h4 className="ProjectModal__container-title">{name}</h4>
-          <p className="ProjectModal__container-info">{info}</p>
-          <div className="ProjectModal__container__linksContainer">
-            <a href={git} target="_blank" rel="noreferrer">
-              <GoMarkGithub className="ProjectModal__container__linksContainer-link" />
-            </a>
-            <a href={link} target="_blank" rel="noreferrer">
-              <MdLink className="ProjectModal__container__linksContainer-link" />
-            </a>
+          <div className="ProjectModal__containerInfo">
+            <h4 className="ProjectModal__container-title">{name}</h4>
+            <div className="ProjectModal__containerInfo-containerTech">
+              {techs.map((tech, index) => (
+                <div
+                  key={index}
+                  className="ProjectModal__containerInfo-containerTech-tech"
+                >
+                  <p>{tech}</p>
+                </div>
+              ))}
+            </div>
+            <p className="ProjectModal__container-info">{info}</p>
+            <div className="ProjectModal__container__linksContainer">
+              <a
+                href={git}
+                target="_blank"
+                rel="noreferrer"
+                className="ProjectModal__container__linksContainer-button"
+              >
+                Respositorio
+                <GoMarkGithub className="ProjectModal__container__linksContainer-icon" />
+              </a>
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="ProjectModal__container__linksContainer-button"
+              >
+                Demo
+                <MdLink className="ProjectModal__container__linksContainer-link" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

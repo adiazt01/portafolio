@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Welcome from "./components/Container/Welcome";
 import Projects from "./components/Container/Projects";
 import Contact from "./components/Container/Contact";
-import Technology from "./components/Container/Technology";
 
 function App() {
   return (
@@ -11,10 +10,12 @@ function App() {
       <Navbar />
       <div className="Container">
         <Welcome />
-        <Technology />
         <Projects />
       </div>
       <Contact />
+      <footer>
+        <p>Copyright&copy; 2023 - Página creada por Armando Diaz - Todos los derechos reservados</p>
+      </footer>
     </>
   );
 }
