@@ -1,0 +1,33 @@
+.SwitchThemeButton{
+    margin-top: -2px;
+    font-size: clamp(10px,8vw, 20px);
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    .SwitchThemeButton_icon.moon{
+        color: rgb(0, 69, 180);
+    }
+
+    .SwitchThemeButton_icon.sun{
+        color: rgb(254, 233, 2);
+        scale: 1.2;
+    }
+}
+
+@media (min-width:768px) {
+    .SwitchThemeButton{
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:425px) {
+    .SwitchThemeButton{
+        margin-top: 4px;
+    }
+}

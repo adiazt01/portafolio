@@ -14,7 +14,7 @@
   background-color: rgba($color: #000000, $alpha: 0.5);
   backdrop-filter: blur(10px);
   z-index: 5;
-  animation: blur .3s;
+  animation: blur 0.3s;
 
   .ProjectModal__container {
     display: flex;
@@ -26,11 +26,11 @@
     padding: 10px;
     margin: 30px auto;
     border-radius: 10px;
-    background-color: #00446A;
+    background-color: #ffffff;
     position: relative;
     z-index: 6;
     box-shadow: 0px 10px 5px rgba($color: #000000, $alpha: 0.3);
-    animation: openModal .7s;
+    animation: openModal 0.7s;
 
     .ProjectModal__container-buttonQuit {
       font-size: 30px;
@@ -44,7 +44,7 @@
       border: 0px;
       height: 35px;
       padding: 3px;
-      color: rgb(255, 255, 255);
+      color: #248bda;
       text-align: center;
       transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -72,7 +72,7 @@
         text-align: center;
         font-size: 2rem;
         font-weight: 400;
-        color: #ffff;
+        color: #313131;
       }
 
       .ProjectModal__containerInfo-containerTech {
@@ -83,10 +83,10 @@
         gap: 10px;
 
         .ProjectModal__containerInfo-containerTech-tech {
-          background-color: #006795;
-          padding: 5px 10px;
+          background-color: #248bda;
+          padding: 5px 15px;
           border-radius: 20px;
-          color: $title-color;
+          color: white;
           font-size: clamp(5px, 5vw, 20px);
         }
       }
@@ -108,7 +108,6 @@
         left: 0;
         right: 0;
 
-
         .ProjectModal__container__linksContainer-button {
           font-weight: 600;
           display: flex;
@@ -119,19 +118,52 @@
           margin-top: 30px;
           padding: 10px 3vw;
           text-decoration: none;
-          color: $buttonSecondary-color;
+          color: white;
           width: auto;
-          background-color: $buttonSecondary-link-color;
-          transition: .3s;
+          background-color: #248bda;
+          transition: 0.3s;
 
           .ProjectModal__container__linksContainer-link-icon {
             transform: scale(1.1);
           }
 
-          &:hover{
+          &:hover {
             transform: scale(1.1);
             box-shadow: 0px 3px 10px $shadow;
           }
+        }
+      }
+    }
+  }
+}
+
+#dark .ProjectModal {
+  .ProjectModal__container {
+    background-color: #222222;
+    .ProjectModal__container-buttonQuit {
+      color: #248bda;
+    }
+
+    .ProjectModal__container-title {
+      color: #e3e3e3;
+    }
+
+    .ProjectModal__container-info{
+      color: #d4d4d4;
+    }
+
+    .ProjectModal__container__linksContainer {
+      .ProjectModal__container__linksContainer-button {
+        color: #e4e4e4;
+        background-color: rgba($color: #101010, $alpha: 0.4);
+        border: 1px solid #248bda;
+        box-shadow: 0px 0px 5px #248bda;
+        color: #248bda;
+
+        &:hover {
+          box-shadow: none;
+          background-color: #248bda;
+          color: #101010;
         }
       }
     }
@@ -159,7 +191,7 @@
         .ProjectModal__container-title {
           margin-top: 3.5vh;
         }
-        .ProjectModal__container__linksContainer{
+        .ProjectModal__container__linksContainer {
           bottom: 40px;
           right: 40px;
           left: auto;

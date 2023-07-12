@@ -1,3 +1,14 @@
+export const projectsHigh = [
+  {
+    name: "Free Games App",
+    img: "Free-games-app.png",
+    git: "https://github.com/adiazt01/fg-app",
+    info: "Aplicacion web que permite buscar juegos gratuitos de distintas plataformas y almacenarlos para posteriormente poder buscarlos. La API es de terceros.",
+    link: "https://adiazt01.github.io/fg-app/",
+    techs: ["React", "JavaScript", "TypeScript", "Sass", "HTML/CSS"],
+  },
+];
+
 export const projects = [
   {
     name: "Frases aleatorias",
@@ -13,7 +24,7 @@ export const projects = [
     git: "https://github.com/adiazt01/lp-react",
     info: "Una landing para una empresa que presta  servicios como desarrolladora de videojuegos.",
     link: "https://adiazt01.github.io/lp-react/",
-    techs: ["React","Sass","HTML/CSS"],
+    techs: ["React", "Sass", "HTML/CSS"],
   },
   {
     name: "Button Component",

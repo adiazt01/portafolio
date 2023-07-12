@@ -9,8 +9,7 @@ function Projects() {
 
   return (
     <section className="ProjectSection" id="Projects">
-      <h2>Proyectos</h2>
-
+      <h2>Pequeños proyectos</h2>
       {modal !== false ? (
         <ProjectModal data={projects[modal]} setModal={setModal} />
       ) : null}

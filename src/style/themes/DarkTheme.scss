@@ -1,33 +1,33 @@
-$primary-color: #002a41;
-$background-color: #002E47;
+$background-color: white;
+$primary-color: #ffffff;
+$title-color: rgb(41, 41, 41);
+$subtitle-color: #474747;
 
-$title-color: #61cedf;
-$subtitle-color: #499fad;
-$link-color: #ffffff;
-$info-color: #d0d0d0;
+$link-color: #09a1e8;
+$info-color: #323131;
+$effect-color: #09a1e8;
 
-/* Efectos */
-$effect-color:  #ff8800;
-$shadow: rgba(black, .2);
+$shadow: rgba(black, 0.2);
+$buttonPrimary-color: #248bda;
+$buttonPrimary-link-color: rgb(230, 230, 230);
 
-/* Boton 1 */
-$buttonPrimary-color: #ff8800;
-$buttonPrimary-link-color: rgb(25, 25, 25);
-
-/* Boton 2 */
-$buttonSecondary-color: rgb(25, 25, 25);
-$buttonSecondary-link-color: #ff8800;
-
-/* Boton Project  Card */
+$buttonSecondary-color: rgb(6, 27, 255);
+$buttonSecondary-link-color: #ffffff;
 $button-border-color: #61cedf;
 $button-link-color: #61cedf;
 
-/* Tarjeta de contacto */
-$cardContact-color: #003E5C;
+$cardContact-color: #003e5c;
 $linkContact-color: #0073ad;
 
 $footer-color: $shadow;
 
-body{
+$Dark-background-color: rgb(134, 134, 134);
+$Dark-primary-color: #464646;
+
+#light{
   background-color: $background-color;
+}
+
+#dark{
+  background-color: #202020;
 }

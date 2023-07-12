@@ -1,15 +1,5 @@
 @import "./themes/DarkTheme.scss";
 
-h2 {
-  color: $title-color;
-  text-align: center;
-  font-size: clamp(18px, 20vw, 50px);
-  margin-top: 25px;
-  margin-bottom: 40px;
-  font-weight: 500;
-}
-
-
 .Welcome {
   margin-top: 2vh;
   justify-content: center;
@@ -19,32 +9,39 @@ h2 {
 
   .Welcomeinfo {
     animation: apparition 1s;
+
     .title {
+      font-weight: 700;
       color: $title-color;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: clamp(20px, 10vw, 20px);
       margin-top: 25px;
+      background: linear-gradient(to top left, #248bda 7%, #09cee8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .rol {
       color: $subtitle-color;
       text-align: center;
       font-size: 1rem;
+      font-weight: 500;
+      font-size: clamp(18px, 10vw, 10px);
     }
 
     .bio {
       margin: 1.5vh auto;
       text-align: center;
-      width: 80%;
+      width: 100%;
       font-weight: 400;
       color: $info-color;
+      font-size: clamp(15px, 10vw, 10px);
     }
 
     .buttonCv {
       border-radius: 10px;
       margin: auto;
       display: flex;
-
       color: $buttonSecondary-link-color;
       background-color: $buttonSecondary-color;
       padding: 10px 5px 10px 0.4em;
@@ -55,16 +52,16 @@ h2 {
       text-decoration: none;
       max-width: 300px;
       font-size: 1.3rem;
-      font-weight: 400;
+      font-weight: 600;
       margin-top: 20px;
-      transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: 0.3s;
       cursor: pointer;
 
-      .Welcome-button-icon{
+      .Welcome-button-icon {
         transform: scale(1.3);
       }
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
@@ -76,10 +73,53 @@ h2 {
     margin: -30px auto 0px;
     max-width: 350px;
   }
+}
 
+h2 {
+  color: #1d1d1d;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: clamp(40px, 8vw, 50px);
+}
+
+#dark h2 {
+  color: #b1b1b1;
+}
+
+#dark .Welcome {
+  .Welcomeinfo {
+    .rol {
+      color: #d8d7d7;
+    }
+
+    .bio {
+      color: #d8d7d7;
+    }
+  }
+
+  .buttonCv {
+    background-color: transparent;
+    border: 1px solid #2ba3ff;
+    color: #2ba3ff;
+    box-shadow: 0px 0px 10px #2ba3ff;
+
+    &:hover {
+      box-shadow: none;
+
+      color: #202020;
+      background-color: #2ba3ff;
+      transform: scale(1.1);
+    }
+  }
 }
 
 @media (min-width: 768px) {
+  h2 {
+    text-align: left;
+  }
+
   .Welcome {
     margin: auto;
     width: 90%;
@@ -88,32 +128,29 @@ h2 {
     align-items: center;
     justify-content: space-around;
 
-
-    .Welcomeinfo{
+    .Welcomeinfo {
       width: 40%;
       margin-bottom: 10%;
-      .title{
+      .title {
         font-size: 2em;
       }
-      .rol{
+      .rol {
         font-size: 1.8em;
       }
-      .bio{
+      .bio {
         font-size: 1.2em;
       }
     }
 
-    .img{
+    .img {
       width: 60%;
       max-width: 650px;
     }
   }
-
 }
 
-
-@keyframes apparition{
-  0%{
+@keyframes apparition {
+  0% {
     opacity: 0;
   }
 }

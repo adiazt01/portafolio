@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
       <section className="ContactSection" id="Contact">
-        <h2>Contacto</h2>
+        <h2>Contactame</h2>
         <div className="ContactSection__containerContact">
           <a
             href="https://www.linkedin.com/in/armando-diaz-291385251/"

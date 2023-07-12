@@ -1,18 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import "./themes//DarkTheme.scss";
+@import "./themes/DarkTheme.scss";
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Signika Negative", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 :root {
   scroll-behavior: smooth;
-  scroll-padding: 250px;
+  scroll-padding: 100px;
 }
 
 .Container {
@@ -35,5 +32,12 @@ footer {
   margin-top: 100px;
   p {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
   }
 }

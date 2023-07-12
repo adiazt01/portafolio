@@ -1,10 +1,11 @@
+import { SwitchTheme } from "../switchTheme";
 import "/src/style/Navbar.scss";
 
-function Navbar() {
+function Navbar({ toggleTheme, theme }) {
   return (
     <div className="navbar">
       <div className="logoContainer">
-        <p className="title">Programador A.D</p>
+        <h1>Armando D.T</h1>
       </div>
       <ul className="linksContainer">
         <li className="item">
@@ -21,6 +22,9 @@ function Navbar() {
           <a href="#Contacts" className="link">
             Contacto
           </a>
+        </li>
+        <li className="item">
+          <SwitchTheme toggleTheme={toggleTheme} theme={theme} />
         </li>
       </ul>
     </div>

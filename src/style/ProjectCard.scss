@@ -8,7 +8,7 @@
   height: 235px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 5px 4px $shadow;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   .ProjectCard_img {
     transition: 0.3s;
